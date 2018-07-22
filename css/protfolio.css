@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Styling the Main flex container  */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top:30px;
+}
+
+/* Styling the Header */
+.heading {
+    display: flex; 
+    flex-wrap: wrap;
+    border-bottom: #686868 solid 3px;
+    margin-bottom: 20px;
+}
+
+.top-image {
+   width: 100%;   
+}
+
+.top-title {
+   margin: 0;
+   width: 100%;
+}
+
+/* Styling the project content  */
+.project {
+    width: 100%;
+}
+
+.project_img {
+    width: 100%;
+    height: 270px;
+}
+
+.project_link {
+    text-decoration: none;
+    color: #000;
+}
+
+.project1, 
+.project2, 
+.project3 {
+    text-align: center;
+    padding: 4px;
+}
+
+.box {
+    width: 100%;
+}
+
+/* Styling Heading elements */
+h1 {
+    font-size: 50px;
+    margin-bottom: 6px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h1, 
+h2,
+h4 {
+     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; 
+    color: #637081;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 30px; 
+    font-family: 30px 'Roboto Condensed', sans-serif;
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (min-width:650px) {
+    .top-title {
+        text-align: right;
+        width: 50%;
+   }
+   .top-image {
+       width: 50%;      
+   }
+   .project1,
+   .project2,
+   .project3 {
+       width: 33.3333%;  
+       padding: 5px;
+   }
+}
+
+@media screen and (min-width:1021px) {
+    .container{
+        margin-left: auto;
+        margin-right:auto;
+        max-width: 1200px;
+    }
+    .top-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+/* Styling the footer */
+footer {
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+}
+
